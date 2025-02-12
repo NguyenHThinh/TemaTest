@@ -1,52 +1,52 @@
 <template>
   <div class="section_container py-20 lg:px-[50px] px-5">
-    <h2 class="home-package__title">Choose your package</h2>
+    <h2 class="home-package__title">{{ $t("choosePackage") }}</h2>
     <h3 class="home-package__desc">
-      We provide various types of packages just for you
+      {{ $t("weProvidePackage") }}
     </h3>
     <div class="mt-16 flex flex-col lg:flex-row gap-8 justify-center items-center lg:items-end">
       <div class="home-package__box">
         <div>
-          <h4 class="home-package__box-title">DEVELOPMENT</h4>
+          <h4 class="home-package__box-title">{{ $t("development") }}</h4>
           <p class="home-package__box-price">
             <span class="text-xl font-medium mr-2 align-super">$</span>10
           </p>
           <div class="home-package__box-detail">
-            <p>1 Module Javascript</p>
-            <p>1 Module Human Resources</p>
+            <p>{{ `1 ${$t("moduleJS")}` }}</p>
+            <p>{{ `1 ${$t("moduleHr")}` }}</p>
           </div>
         </div>
-        <button class="home-package__box-btn">Buy Now</button>
+        <button class="home-package__box-btn">{{ $t("buyNow") }}</button>
       </div>
       <div class="home-package__box active">
         <div>
-          <h4 class="home-package__box-title">IT & SOFTWARE</h4>
+          <h4 class="home-package__box-title">{{ $t("itSoftware") }}</h4>
           <p class="home-package__box-price">
             <span class="text-xl font-medium mr-2 align-super">$</span>30
           </p>
           <div class="home-package__box-detail">
-            <p>1 Module Javascript</p>
-            <p>1 Module Human Resources</p>
-            <p>2 Module Sales Teams</p>
-            <p>Pack Marketing Skills</p>
-            <p>5 Module Study Case</p>
+            <p>{{ `1 ${$t("moduleJS")}` }}</p>
+            <p>{{ `1 ${$t("moduleJS")}` }}</p>
+            <p>{{ `2 ${$t("moduleSalesTeam")}` }}</p>
+            <p>{{ `2 ${$t("packMarketingSkill")}` }}</p>
+            <p>{{ `5 ${$t("moduleStudyCase")}` }}</p>
           </div>
         </div>
-        <button class="home-package__box-btn">Buy Now</button>
+        <button class="home-package__box-btn">{{ $t("buyNow") }}</button>
       </div>
       <div class="home-package__box">
         <div>
-          <h4 class="home-package__box-title">BUSINESS</h4>
+          <h4 class="home-package__box-title">{{ $t("business") }}</h4>
           <p class="home-package__box-price">
             <span class="text-xl font-medium mr-2 align-super">$</span>30
           </p>
           <div class="home-package__box-detail">
-            <p>1 Module Javascript</p>
-            <p>1 Module Human Resources</p>
-            <p>2 Module Sales Teams</p>
+            <p>{{ `1 ${$t("moduleJS")}` }}</p>
+            <p>{{ `1 ${$t("moduleJS")}` }}</p>
+            <p>{{ `2 ${$t("moduleSalesTeam")}` }}</p>
           </div>
         </div>
-        <button class="home-package__box-btn">Buy Now</button>
+        <button class="home-package__box-btn">{{ $t("buyNow") }}</button>
       </div>
     </div>
   </div>

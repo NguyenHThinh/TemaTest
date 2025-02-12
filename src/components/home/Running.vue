@@ -1,17 +1,16 @@
 <template>
   <div class="section_container home-running">
     <div>
-      <h2 class="home-running__title">Get up and running fast together</h2>
+      <h2 class="home-running__title">{{ $t("getUpAndRunning") }}</h2>
       <div class="flex flex-col sm:flex-row mt-20 mb-20 lg:mb-0">
         <div
           class="flex flex-col items-center text-center lg:text-left lg:items-start"
         >
           <NuxtImg src="/images/ic-sound.png" class="w-11 h-10" />
           <div class="space-y-4 mt-14">
-            <h3 class="home-running__box-title">University</h3>
+            <h3 class="home-running__box-title">{{ $t("university") }}</h3>
             <p class="home-running__box-desc">
-              Browse hundreds of in-depth videos, courses, and guides to get up
-              and running fast
+              {{ $t("browseHundreds") }}
             </p>
           </div>
         </div>
@@ -23,10 +22,9 @@
         >
           <NuxtImg src="/images/ic-rubic.png" class="w-8 h-9" />
           <div class="space-y-4 mt-14">
-            <h3 class="home-running__box-title">Showcase</h3>
+            <h3 class="home-running__box-title">{{ $t("showcase") }}</h3>
             <p class="home-running__box-desc">
-              Get inspired by the incredible websites built by members of the
-              community
+              {{ $t("getInspired") }}
             </p>
           </div>
         </div>
@@ -34,7 +32,7 @@
     </div>
     <div class="home-running__pic">
       <div class="home-running__pic-contain">
-        <h2 class="home-running__pic-contain--title">TUTORS</h2>
+        <h2 class="home-running__pic-contain--title">{{ $t("tutors") }}</h2>
         <h3 class="home-running__pic-contain--name">Anthoney Mills</h3>
         <NuxtImg
           src="/images/people-2.png"

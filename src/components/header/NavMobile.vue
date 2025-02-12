@@ -34,7 +34,7 @@
                 src="/images/Icon/ic-setting1.png"
                 class="w-[30px] h-[30px]"
               />
-              <p class="header__nav-mb--items">Tutorials</p>
+              <p class="header__nav-mb--items">{{ $t("tutorial") }}</p>
               <NuxtImg src="/images/Icon/ic-arrow-right.png" class="w-6 h-6" />
             </NuxtLinkLocale>
           </li>
@@ -47,7 +47,7 @@
                 src="/images/Icon/ic-setting2.png"
                 class="w-[30px] h-[30px]"
               />
-              <p class="header__nav-mb--items">Case studies</p>
+              <p class="header__nav-mb--items">{{ $t("caseStudies") }}</p>
               <NuxtImg src="/images/Icon/ic-arrow-right.png" class="w-6 h-6" />
             </NuxtLinkLocale>
           </li>
@@ -60,7 +60,7 @@
                 src="/images/Icon/ic-setting3.png"
                 class="w-[30px] h-[30px]"
               />
-              <p class="header__nav-mb--items">Resources</p>
+              <p class="header__nav-mb--items">{{ $t("resources") }}</p>
               <NuxtImg src="/images/Icon/ic-arrow-right.png" class="w-6 h-6" />
             </NuxtLinkLocale>
           </li>
