@@ -7,7 +7,7 @@
         class="w-[100px] lg:w-[195px] object-cover absolute bottom-0 lg:top-1/2 lg:-translate-y-1/2 right-0 lg:translate-x-1/3"
       />
     </div>
-    <div class="max-w-[450px]">
+    <div class="max-w-[450px] px-5">
       <h2 class="home-hosting__title">The language for building web pages</h2>
       <h3 class="home-hosting__desc">
         Go live on a fast, reliable, and hassle-free hosting network that scales
