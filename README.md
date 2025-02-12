@@ -6,7 +6,7 @@
 
 Pull the latest code from the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/NguyenHThinh/TemaTest.git
 cd <repository-name>
 ```
 ### 2️⃣ Install Dependencies
