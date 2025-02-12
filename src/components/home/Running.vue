@@ -7,7 +7,7 @@
           class="flex flex-col items-center text-center lg:text-left lg:items-start"
         >
           <NuxtImg src="/images/ic-sound.png" class="w-11 h-10" />
-          <div class="space-y-4 mt-14">
+          <div class="space-y-4 mt-14 flex flex-col items-center">
             <h3 class="home-running__box-title">{{ $t("university") }}</h3>
             <p class="home-running__box-desc">
               {{ $t("browseHundreds") }}
@@ -21,7 +21,7 @@
           class="flex flex-col items-center text-center lg:text-left lg:items-start"
         >
           <NuxtImg src="/images/ic-rubic.png" class="w-8 h-9" />
-          <div class="space-y-4 mt-14">
+          <div class="space-y-4 mt-14 flex flex-col items-center">
             <h3 class="home-running__box-title">{{ $t("showcase") }}</h3>
             <p class="home-running__box-desc">
               {{ $t("getInspired") }}
