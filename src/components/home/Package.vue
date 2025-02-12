@@ -62,7 +62,7 @@
   @apply font-[250] text-[22px] leading-[26.4px] tracking-[0%] text-center mt-5;
 }
 .home-package__box {
-  @apply w-[393px] flex flex-col justify-between h-[488px] bg-[#f4f4f4] text-center px-9 pb-10 pt-16 rounded-[10px];
+  @apply w-[343px] lg:w-[393px] flex flex-col justify-between h-[488px] bg-[#f4f4f4] text-center px-9 pb-10 pt-16 rounded-[10px];
   
   .home-package__box-title {
     @apply font-normal text-2xl leading-[28.8px] tracking-[0.25px];
