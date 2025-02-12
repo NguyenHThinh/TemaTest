@@ -36,7 +36,7 @@
   font-family: Source Code Pro;
 }
 .desc {
-  @apply max-w-[236px] mx-auto font-[250] text-sm lg:text-[34px] leading-[16.8px] lg:leading-[40.8px] tracking-[0.1px] lg:tracking-[0.25px] text-center;
+  @apply max-w-[236px] lg:max-w-max mx-auto font-[250] text-sm lg:text-[34px] leading-[16.8px] lg:leading-[40.8px] tracking-[0.1px] lg:tracking-[0.25px] text-center;
 }
 button {
   @apply  font-medium text-[10px] lg:text-[22px] leading-3 lg:leading-[26.4px] tracking-[0%];

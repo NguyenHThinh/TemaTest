@@ -25,7 +25,7 @@
       </button>
     </div>
     <div
-      class="lg:w-[706px] h-[500px] lg:h-[905px] w-full relative home-wellcome__bg-img"
+      class="lg:w-[650px] xl:w-[706px] h-[500px] lg:h-[905px] w-full relative home-wellcome__bg-img"
     >
       <NuxtImg
         src="/images/bg-header.png"
