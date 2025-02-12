@@ -6,7 +6,7 @@
       Start upgrading your<br />
       skills free for this month
     </h2>
-    <h3 class="desc mt-3">
+    <h3 class="desc">
       Build your site for free and take as long as you need
     </h3>
     <div
@@ -34,11 +34,11 @@
 
 <style scoped>
 .title {
-  @apply font-extrabold text-[23px] leading-[28.91px] tracking-[-0.5px] text-center lg:text-[56px] lg:leading-[70.39px];
+  @apply font-extrabold text-[22px] leading-[28.91px] tracking-[-0.5px] text-center lg:text-[56px] lg:leading-[70.39px];
   font-family: Source Code Pro;
 }
 .desc {
-  @apply max-w-[236px] lg:max-w-max mx-auto font-[250] text-sm lg:text-[34px] leading-[16.8px] lg:leading-[40.8px] tracking-[0.1px] lg:tracking-[0.25px] text-center;
+  @apply max-w-[236px] mt-3 lg:max-w-max mx-auto font-[250] text-sm lg:text-[34px] leading-[16.8px] lg:leading-[40.8px] tracking-[0.1px] lg:tracking-[0.25px] text-center;
 }
 button {
   @apply font-medium text-[10px] lg:text-[22px] leading-3 lg:leading-[26.4px] tracking-[0%];
