@@ -1,7 +1,7 @@
 <template>
   <div class="lg:hidden">
     <!-- Button open sidebar -->
-    <button class="" @click="isOpenNav = true">
+    <button @click="isOpenNav = true">
       <NuxtImg src="/images/Icon/ic-menu.png" class="w-5 h-2" />
     </button>
 
@@ -12,7 +12,7 @@
       @click="isOpenNav = false"
     ></div>
     <div
-      class="z-50 fixed top-0 right-0 h-dvh w-[327px] bg-[#000000DE] backdrop-blur-[10px] transition-all"
+      class="z-50 fixed top-0 bottom-0 right-0 min-h-screen w-[327px] bg-[#000000DE] backdrop-blur-[10px] transition-all"
       :class="{ 'translate-x-0': isOpenNav, 'translate-x-full': !isOpenNav }"
     >
       <div class="p-4 flex justify-end items-center">

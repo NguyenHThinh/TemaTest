@@ -1,9 +1,9 @@
 <template>
-  <div class="section_container relative px-[50px] pb-20 pt-[250px] mt-[200px] lg:mt-[350px] bg-black">
+  <div class="section_container relative p-5 lg:px-[50px] lg:pb-20 pt-[250px] mt-[200px] lg:mt-[350px] bg-black">
     <div class="absolute top-0 lg:left-14 lg:right-14 left-[30px] right-[30px] -translate-y-[100px] lg:-translate-y-[225px]">
       <FooterSub />
     </div>
-    <div class="px-20 py-[30px] flex flex-col gap-20 lg:gap-0 lg:flex-row justify-between items-center">
+    <div class="lg:px-20 py-[30px] flex flex-col gap-20 lg:gap-0 lg:flex-row justify-between items-center">
       <div class="flex flex-row items-center gap-5">
         <CommonLogo color="light" />
         <h3 class="text-[white] font-bold text-[34px] leading-[40.8px] tracking-[0.25px]">Macode</h3>
@@ -23,17 +23,17 @@
     <div class="w-full h-px bg-[#A3A3A3]"></div>
     <div class="lg:px-20 py-[30px] flex flex-col md:flex-row justify-between items-center">
       <div class="w-full md:w-max flex flex-row items-center justify-around gap-5">
-        <NuxtImg src="/images/Icon/ic-fb.png" class="w-3 h-6 object-cover" />
-        <NuxtImg src="/images/Icon/ic-insta.png" class="w-6 h-6 object-cover" />
+        <NuxtImg src="/images/Icon/ic-fb.png" class="w-3 h-6 object-cover cursor-pointer" />
+        <NuxtImg src="/images/Icon/ic-insta.png" class="w-6 h-6 object-cover cursor-pointer" />
         <NuxtImg
           src="/images/Icon/ic-linkedin.png"
-          class="w-6 h-6 object-cover"
+          class="w-6 h-6 object-cover cursor-pointer"
         />
         <NuxtImg
           src="/images/Icon/ic-twitter.png"
-          class="w-6 h-6 object-cover"
+          class="w-6 h-6 object-cover cursor-pointer"
         />
-        <NuxtImg src="/images/Icon/ic-mail.png" class="w-6 h-6 object-cover" />
+        <NuxtImg src="/images/Icon/ic-mail.png" class="w-6 h-6 object-cover cursor-pointer" />
       </div>
       <div class="w-full h-px bg-[#A3A3A3] md:hidden my-8"></div>
       <p
@@ -52,6 +52,6 @@
 
 <style scoped>
 .footer__nav--items {
-  @apply text-[white] font-extralight text-xl leading-6 lg:font-[250] lg:text-3xl lg:leading-9 tracking-[0.25px];
+  @apply text-white font-extralight text-xl leading-6 lg:font-[250] lg:text-3xl lg:leading-9 tracking-[0.25px];
 }
 </style>

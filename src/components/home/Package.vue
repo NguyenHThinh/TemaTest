@@ -58,11 +58,13 @@
 .home-package__title {
   @apply font-bold text-5xl leading-[57.6px] tracking-[0%] text-center;
 }
+
 .home-package__desc {
   @apply font-[250] text-[22px] leading-[26.4px] tracking-[0%] text-center mt-5;
 }
+
 .home-package__box {
-  @apply w-[393px] flex flex-col justify-between h-[488px] bg-[#f4f4f4] text-center px-9 pb-10 pt-16 rounded-[10px];
+  @apply w-[343px] lg:w-[393px] flex flex-col justify-between h-[488px] bg-[#f4f4f4] text-center px-9 pb-10 pt-16 rounded-[10px];
   
   .home-package__box-title {
     @apply font-normal text-2xl leading-[28.8px] tracking-[0.25px];
@@ -77,7 +79,7 @@
   }
 
   .home-package__box-btn {
-    @apply w-full text-[#ddf247] font-medium text-[22px] leading-[26.4px] tracking-[0%] text-center px-[30px] py-[15px] rounded-[10px] bg-white;
+    @apply w-full text-[#ddf247] font-medium text-[22px] leading-[26.4px] tracking-[0%] text-center px-[30px] py-[15px] rounded-[10px] bg-white lg:hover:shadow-md transition-all;
   }
 
   &.active {
@@ -87,7 +89,7 @@
       @apply my-10;
     }
     .home-package__box-btn {
-      @apply text-black bg-[#ddf247];
+      @apply text-black bg-[#ddf247] lg:hover:shadow-md lg:hover:bg-opacity-90 transition-all;
     }
   }
 }

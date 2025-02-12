@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="section_container home-wellcome"
-  >
+  <div class="section_container home-wellcome">
     <div class="flex-1 pl-4 pb-20 pt-[180px]">
       <h1 class="home-wellcome__title">
         Improve your skills by study <span></span> with coding
@@ -15,7 +13,7 @@
       </h3>
 
       <button
-        class="mt-20 cursor-pointer w-max py-4 px-7 gap-5 flex flex-row items-center rounded-[2px] bg-[#010101] text-white"
+        class="mt-20 cursor-pointer w-max py-4 px-7 gap-5 flex flex-row items-center rounded-[2px] bg-[#010101] text-white lg:hover:shadow-md lg:hover:bg-opacity-80 transition-all"
       >
         <p class="home-wellcome__get-start">Get started</p>
         <NuxtImg
@@ -25,7 +23,7 @@
       </button>
     </div>
     <div
-      class="lg:w-[650px] xl:w-[706px] h-[500px] lg:h-[905px] w-full relative home-wellcome__bg-img"
+      class="lg:w-[600px] xl:w-[650px] min-[1440px]:w-[706px] h-[500px] lg:h-[905px] w-full relative home-wellcome__bg-img"
     >
       <NuxtImg
         src="/images/bg-header.png"
@@ -68,56 +66,36 @@
   @apply flex flex-col lg:flex-row bg-[#f4f4f4];
 
   .home-wellcome__title {
-    max-width: 604px;
+    @apply max-w-[604px] font-medium text-6xl leading-[75.42px] tracking-[-0.5px];
     font-family: Source Code Pro;
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 75.42px;
-    letter-spacing: -0.5px;
   }
   .home-wellcome__description {
-    max-width: 375px;
+    @apply max-w-[375px] font-normal text-base leading-[20.11px] tracking-[0%];
     font-family: Source Code Pro;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20.11px;
-    letter-spacing: 0%;
   }
   .home-wellcome__get-start {
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26.4px;
-    letter-spacing: 0%;
+    @apply font-medium text-[22px] leading-[26.4px] tracking-[0%];
   }
   .home-wellcome__name {
+    @apply font-[250] text-xl leading-6;
     font-family: Aeonik;
-    font-weight: 250;
-    font-size: 20px;
-    line-height: 24px;
   }
 }
 
 @media (max-width: 1024px) {
   .home-wellcome {
     .home-wellcome__title {
+      @apply max-w-[60%] font-normal text-[34px] leading-[40.8px] tracking-[0.25px];
       font-family: Aeonik;
-      max-width: 60%;
-      font-weight: 400;
-      font-size: 34px;
-      line-height: 40.8px;
-      letter-spacing: 0.25px;
     }
     .home-wellcome__description {
-      font-size: 12px;
-      line-height: 15.08px;
+      @apply text-xs leading-[15.08px];
     }
     .home-wellcome__get-start {
-      font-size: 17px;
-      line-height: 20.4px;
+      @apply text-[17px] leading-[20.4px];
     }
     .home-wellcome__name {
-      font-size: 10.6px;
-      line-height: 12.72px;
+      @apply text-[10.6px] leading-[12.72px];
     }
   }
 }

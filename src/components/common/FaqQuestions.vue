@@ -4,12 +4,18 @@
       <h3 class="faq-box__content--question">
         {{ question }}
       </h3>
-      <p
-        class="faq-box__content--answer"
-        :class="isActiveAnswer ? 'block' : 'hidden'"
+      <div
+        class="transition-all duration-300 ease-linear overflow-hidden"
+        :class="
+          isActiveAnswer
+            ? 'max-h-[500px] opacity-100'
+            : 'max-h-0 opacity-0'
+        "
       >
-        {{ answer }}
-      </p>
+        <p class="faq-box__content--answer">
+          {{ answer }}
+        </p>
+      </div>
     </div>
     <button
       :class="[
@@ -53,7 +59,7 @@ const handChangeActiveAnswer = () => {
   @apply flex flex-row justify-between items-center;
 
   .faq-box__content {
-    @apply max-w-[782px] px-0 py-10;
+    @apply max-w-[782px] px-0 py-10 transition-all;
 
     .faq-box__content--question {
       @apply font-medium text-[21px] leading-[25.2px] tracking-[0.22px] 
@@ -67,7 +73,7 @@ const handChangeActiveAnswer = () => {
   }
   .faq-box__controler-btn {
     @apply flex justify-center items-center border-2 border-solid rounded-full font-medium 
-    w-8 h-8 lg:w-[62px] lg:h-[62px] min-w-8
+    w-8 h-8 lg:w-[62px] lg:h-[62px] min-w-8 lg:hover:shadow-md lg:hover:bg-opacity-80 transition-all
     lg:text-[47.41px] lg:tracking-[0.3px] text-[24.47px] leading-[29.36px] tracking-[0.16px];
   }
 }

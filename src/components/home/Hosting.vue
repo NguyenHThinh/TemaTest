@@ -7,7 +7,7 @@
         class="w-[100px] lg:w-[195px] object-cover absolute bottom-0 lg:top-1/2 lg:-translate-y-1/2 right-0 lg:translate-x-1/3"
       />
     </div>
-    <div class="w-[450px]">
+    <div class="max-w-[450px] px-5">
       <h2 class="home-hosting__title">The language for building web pages</h2>
       <h3 class="home-hosting__desc">
         Go live on a fast, reliable, and hassle-free hosting network that scales
@@ -43,7 +43,7 @@
   }
 
   .home-hosting__try-btn {
-    @apply cursor-pointer w-max py-4 px-7 gap-5 flex flex-row items-center rounded-[2px] bg-[#010101] text-white;
+    @apply cursor-pointer w-max py-4 px-7 gap-5 flex flex-row items-center rounded-[2px] bg-[#010101] text-white lg:hover:shadow-md lg:hover:bg-opacity-80 transition-all;
 
     .home-hosting__try-btn--text {
       @apply font-medium text-[22px] leading-[26.4px] tracking-[0%];
