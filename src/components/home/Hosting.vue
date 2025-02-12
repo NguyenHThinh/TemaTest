@@ -4,17 +4,15 @@
       <NuxtImg src="/images/source-code-2.png" class="w-[620px] object-cover" />
       <NuxtImg
         src="/images/icon-park_caution.png"
-        class="w-[100px] lg:w-[195px] object-cover absolute bottom-0 lg:top-1/2 lg:-translate-y-1/2 right-0 lg:translate-x-1/3"
+        class="w-[100px] lg:w-[195px] object-cover absolute bottom-0 lg:top-1/2 lg:-translate-y-1/2 right-0 lg:translate-x-[50px]"
       />
     </div>
     <div class="max-w-[450px] px-5">
-      <h2 class="home-hosting__title">The language for building web pages</h2>
-      <h3 class="home-hosting__desc">
-        Go live on a fast, reliable, and hassle-free hosting network that scales
-        with your business with one click and go code!
+      <h2 class="home-hosting__title">{{ $t("languageBuilding") }}</h2>
+      <h3 class="home-hosting__desc">{{ $t("goLive") }}
       </h3>
       <button class="home-hosting__try-btn">
-        <p class="home-hosting__try-btn--text">Try it Yourself</p>
+        <p class="home-hosting__try-btn--text">{{ $t("tryIt") }}</p>
         <NuxtImg
           src="/images/Icon/akar-icons_arrow-up-right.png"
           class="object-cover w-[45px] aspect-square hidden lg:block"

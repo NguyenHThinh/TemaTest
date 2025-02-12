@@ -1,11 +1,11 @@
 <template>
   <div class="section_container home-features">
     <div class="col-span-8 lg:col-span-3 pl-4 lg:pl-[50px]">
-      <h2 class="home-features__title">Our Features Special For You</h2>
+      <h2 class="home-features__title">{{ t("ourFeaturesSpecial") }}</h2>
       <h3
         class="home-features__desc"
       >
-        We provide various special features for all of you
+      {{ t("weProvideSpecial") }}
       </h3>
       <div class="lg:flex flex-row gap-2 mt-24 hidden">
         <button
@@ -43,25 +43,26 @@
 
 <script lang="ts" setup>
 import type { IFeaturesSlide } from "~/types";
+const {t} =useI18n();
 
 const SLIDES_DATA: IFeaturesSlide[] = [
   {
     id: "_slide-1",
     icon: "/images/Icon/ic-feature-slide-1.png",
-    title: "Flexible",
-    desc: "Connect your marketing tools with built-in integrations",
+    title: t("flexible"),
+    desc: t("connectMarketingTool"),
   },
   {
     id: "_slide-2",
     icon: "/images/Icon/ic-feature-slide-2.png",
-    title: "Best Tutors",
-    desc: "Bring your design vision to life in clean, semantic HTML5",
+    title: t("bestTutor"),
+    desc: t("bringYourDesign"),
   },
   {
     id: "_slide-3",
     icon: "/images/Icon/ic-feature-slide-3.png",
-    title: "Easy Access",
-    desc: "Connect your marketing tools with built-in integrations",
+    title: t("easyAccess"),
+    desc: t("connectMarketingTool"),
   },
 ];
 

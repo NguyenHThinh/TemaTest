@@ -17,8 +17,9 @@
 </template>
 
 <script lang="ts" setup>
+const {t} = useI18n()
 
 useSeoMeta({
-  title: "Home | TEMA test",
+  title: `${t("home")} | Macode`
 });
 </script>
