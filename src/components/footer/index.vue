@@ -1,9 +1,9 @@
 <template>
-  <div class="section_container relative px-[50px] pb-20 pt-[250px] mt-[200px] lg:mt-[350px] bg-black">
+  <div class="section_container relative px-5 lg:px-[50px] pb-20 pt-[250px] mt-[200px] lg:mt-[350px] bg-black">
     <div class="absolute top-0 lg:left-14 lg:right-14 left-[30px] right-[30px] -translate-y-[100px] lg:-translate-y-[225px]">
       <FooterSub />
     </div>
-    <div class="px-20 py-[30px] flex flex-col gap-20 lg:gap-0 lg:flex-row justify-between items-center">
+    <div class="lg:px-20 py-[30px] flex flex-col gap-20 lg:gap-0 lg:flex-row justify-between items-center">
       <div class="flex flex-row items-center gap-5">
         <CommonLogo color="light" />
         <h3 class="text-[white] font-bold text-[34px] leading-[40.8px] tracking-[0.25px]">Macode</h3>
@@ -52,6 +52,6 @@
 
 <style scoped>
 .footer__nav--items {
-  @apply text-[white] font-extralight text-xl leading-6 lg:font-[250] lg:text-3xl lg:leading-9 tracking-[0.25px];
+  @apply text-white font-extralight text-xl leading-6 lg:font-[250] lg:text-3xl lg:leading-9 tracking-[0.25px];
 }
 </style>

@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="section_container home-wellcome"
-  >
+  <div class="section_container home-wellcome">
     <div class="flex-1 pl-4 pb-20 pt-[180px]">
       <h1 class="home-wellcome__title">
         Improve your skills by study <span></span> with coding
@@ -68,56 +66,36 @@
   @apply flex flex-col lg:flex-row bg-[#f4f4f4];
 
   .home-wellcome__title {
-    max-width: 604px;
+    @apply max-w-[604px] font-medium text-6xl leading-[75.42px] tracking-[-0.5px];
     font-family: Source Code Pro;
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 75.42px;
-    letter-spacing: -0.5px;
   }
   .home-wellcome__description {
-    max-width: 375px;
+    @apply max-w-[375px] font-normal text-base leading-[20.11px] tracking-[0%];
     font-family: Source Code Pro;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20.11px;
-    letter-spacing: 0%;
   }
   .home-wellcome__get-start {
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26.4px;
-    letter-spacing: 0%;
+    @apply font-medium text-[22px] leading-[26.4px] tracking-[0%];
   }
   .home-wellcome__name {
+    @apply font-[250] text-xl leading-6;
     font-family: Aeonik;
-    font-weight: 250;
-    font-size: 20px;
-    line-height: 24px;
   }
 }
 
 @media (max-width: 1024px) {
   .home-wellcome {
     .home-wellcome__title {
+      @apply max-w-[60%] font-normal text-[34px] leading-[40.8px] tracking-[0.25px];
       font-family: Aeonik;
-      max-width: 60%;
-      font-weight: 400;
-      font-size: 34px;
-      line-height: 40.8px;
-      letter-spacing: 0.25px;
     }
     .home-wellcome__description {
-      font-size: 12px;
-      line-height: 15.08px;
+      @apply text-xs leading-[15.08px];
     }
     .home-wellcome__get-start {
-      font-size: 17px;
-      line-height: 20.4px;
+      @apply text-[17px] leading-[20.4px];
     }
     .home-wellcome__name {
-      font-size: 10.6px;
-      line-height: 12.72px;
+      @apply text-[10.6px] leading-[12.72px];
     }
   }
 }

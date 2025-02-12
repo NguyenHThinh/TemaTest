@@ -20,7 +20,7 @@
       </div>
     </div>
     <div
-      class="col-span-8 mt-10 justify-center lg:justify-normal lg:mt-0 lg:col-span-5 gap-8 grid grid-cols-[repeat(3,317px)] overflow-hidden"
+      class="col-span-8 mt-10 justify-center lg:justify-normal lg:mt-0 lg:col-span-5 gap-4 lg:gap-8 grid grid-cols-[repeat(3,317px)] overflow-hidden"
     >
       <SliderFeatures
         :slider-data="SLIDES_DATA"
