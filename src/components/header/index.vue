@@ -9,7 +9,7 @@
       <CommonLogo color="dark" />
       <h2 class="font-bold text-xl leading-7 tracking-[0.15px] lg:hidden">macode.</h2>
     </div>
-    <div class="flex flex-row items-center gap-5 ml-24">
+    <div class="flex flex-row items-center gap-5 lg:ml-24">
       <HeaderNavDesktop />
       <HeaderSwitchLanguage />
       <HeaderNavMobile />
