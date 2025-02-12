@@ -1,12 +1,12 @@
 <template>
   <div
-    class="max-w-[1172px] h-[300px] lg:h-[410px] mx-auto rounded-[20px] bg-[#DDF247] p-[24px] lg:py-[52px] shadow-[0px_21px_127px_22px_#DDF2474D]"
+    class="footer__sub"
   >
-    <h2 class="title">
+    <h2 class="footer__sub--title">
       Start upgrading your<br />
       skills free for this month
     </h2>
-    <h3 class="desc">
+    <h3 class="footer__sub--desc">
       Build your site for free and take as long as you need
     </h3>
     <div
@@ -32,15 +32,19 @@
 
 <script lang="ts" setup></script>
 
-<style scoped>
-.title {
-  @apply font-extrabold text-[22px] leading-[28.91px] tracking-[-0.5px] text-center lg:text-[56px] lg:leading-[70.39px];
-  font-family: Source Code Pro;
-}
-.desc {
-  @apply max-w-[236px] mt-3 lg:max-w-max mx-auto font-[250] text-sm lg:text-[34px] leading-[16.8px] lg:leading-[40.8px] tracking-[0.1px] lg:tracking-[0.25px] text-center;
-}
-button {
-  @apply font-medium text-[10px] lg:text-[22px] leading-3 lg:leading-[26.4px] tracking-[0%];
+<style lang="scss" scoped>
+.footer__sub {
+  @apply max-w-[1172px] h-[300px] lg:h-[410px] mx-auto rounded-[20px] bg-[#DDF247] p-[24px] lg:py-[52px] shadow-[0px_21px_127px_22px_#DDF2474D];
+
+  .footer__sub--title {
+    @apply font-extrabold text-[22px] leading-[28.91px] tracking-[-0.5px] text-center lg:text-[56px] lg:leading-[70.39px];
+    font-family: Source Code Pro;
+  }
+  .footer__sub--desc {
+    @apply max-w-[236px] mt-3 lg:max-w-max mx-auto font-[250] text-sm lg:text-[34px] leading-[16.8px] lg:leading-[40.8px] tracking-[0.1px] lg:tracking-[0.25px] text-center;
+  }
+  button {
+    @apply font-medium text-[10px] lg:text-[22px] leading-3 lg:leading-[26.4px] tracking-[0%] lg:hover:shadow-md lg:hover:bg-opacity-90 transition-all;
+  }
 }
 </style>

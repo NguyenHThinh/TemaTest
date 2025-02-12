@@ -17,8 +17,8 @@
     >
       <button
         :class="[
-          'flex-row gap-2 items-center p-1 rounded-lg flex',
-          { 'bg-white': lang.code === locale },
+          'flex-row w-full gap-2 items-center p-2 pr-4 rounded-lg flex lg:hover:bg-white lg:hover:bg-opacity-45 transition-all',
+          { '!bg-white': lang.code === locale },
         ]"
         v-for="lang in locales"
         :key="lang.code"

@@ -73,7 +73,7 @@ const handChangeActiveAnswer = () => {
   }
   .faq-box__controler-btn {
     @apply flex justify-center items-center border-2 border-solid rounded-full font-medium 
-    w-8 h-8 lg:w-[62px] lg:h-[62px] min-w-8
+    w-8 h-8 lg:w-[62px] lg:h-[62px] min-w-8 lg:hover:shadow-md lg:hover:bg-opacity-80 transition-all
     lg:text-[47.41px] lg:tracking-[0.3px] text-[24.47px] leading-[29.36px] tracking-[0.16px];
   }
 }

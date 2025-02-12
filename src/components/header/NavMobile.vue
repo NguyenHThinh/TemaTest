@@ -1,7 +1,7 @@
 <template>
   <div class="lg:hidden">
     <!-- Button open sidebar -->
-    <button class="" @click="isOpenNav = true">
+    <button @click="isOpenNav = true">
       <NuxtImg src="/images/Icon/ic-menu.png" class="w-5 h-2" />
     </button>
 

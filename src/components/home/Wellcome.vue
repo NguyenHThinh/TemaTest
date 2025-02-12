@@ -13,7 +13,7 @@
       </h3>
 
       <button
-        class="mt-20 cursor-pointer w-max py-4 px-7 gap-5 flex flex-row items-center rounded-[2px] bg-[#010101] text-white"
+        class="mt-20 cursor-pointer w-max py-4 px-7 gap-5 flex flex-row items-center rounded-[2px] bg-[#010101] text-white lg:hover:shadow-md lg:hover:bg-opacity-80 transition-all"
       >
         <p class="home-wellcome__get-start">Get started</p>
         <NuxtImg
@@ -23,7 +23,7 @@
       </button>
     </div>
     <div
-      class="lg:w-[650px] xl:w-[706px] h-[500px] lg:h-[905px] w-full relative home-wellcome__bg-img"
+      class="lg:w-[600px] xl:w-[650px] min-[1440px]:w-[706px] h-[500px] lg:h-[905px] w-full relative home-wellcome__bg-img"
     >
       <NuxtImg
         src="/images/bg-header.png"
