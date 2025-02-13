@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         flag: "/images/flag_vi.png",
       },
     ],
-    defaultLocale: "vi",
+    defaultLocale: "en",
     lazy: true,
     langDir: "locales",
     strategy: "prefix_except_default",
