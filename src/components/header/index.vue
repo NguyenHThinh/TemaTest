@@ -1,3 +1,20 @@
+<script lang="ts" setup>
+const isScrolled = ref(false);
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 50;
+};
+
+onMounted(() => {
+  handleScroll();
+  window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
+</script>
+
 <template>
   <div
     :class="[
@@ -16,20 +33,3 @@
     </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-const isScrolled = ref(false);
-
-const handleScroll = () => {
-  isScrolled.value = window.scrollY > 50;
-};
-
-onMounted(() => {
-  handleScroll();
-  window.addEventListener("scroll", handleScroll);
-});
-
-onUnmounted(() => {
-  window.removeEventListener("scroll", handleScroll);
-});
-</script>

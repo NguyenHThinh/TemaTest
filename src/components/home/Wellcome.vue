@@ -1,18 +1,20 @@
+<script lang="ts" setup></script>
+
 <template>
   <div class="section_container home-wellcome">
-    <div class="flex-1 pl-5 lg:pl-[50px] pb-20 pt-[180px]">
+    <div class="flex-1 pb-[82px] pt-[103px] pl-5 lg:pl-[50px] lg:pb-[107px] lg:pt-[173px]">
       <h1 class="home-wellcome__title">
         {{ $t("improveYourSkill") }}
       </h1>
-      <div class="mt-10 lg:mt-20">
-        <NuxtImg src="/images/wave.png" class="object-cover" />
+      <div class="mt-10 lg:mt-[74px]">
+        <NuxtImg src="/images/wave.png" class="w-[60px] h-[60px] lg:w-[75px] lg:h-[75px]" />
       </div>
       <h3 class="home-wellcome__description">
         {{ $t("createLaunch") }}
       </h3>
 
       <button
-        class="mt-20 cursor-pointer w-max py-4 px-7 gap-5 flex flex-row items-center rounded-[2px] 
+        class="mt-[22px] lg:mt-[111px] cursor-pointer w-max py-4 px-7 gap-5 flex flex-row items-center rounded-[2px] 
         bg-[#010101] text-white lg:hover:bg-opacity-80 lg:hover:text-[#DDF247] transition-all"
       >
         <p class="home-wellcome__get-start">{{ $t("getStarted") }}</p>
@@ -59,24 +61,22 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
-
 <style lang="scss" scoped>
 .home-wellcome {
   @apply flex flex-col min-[1080px]:flex-row bg-[#f4f4f4];
 
-  .home-wellcome__title {
+  &__title {
     @apply max-w-[604px] font-medium text-6xl leading-[75.42px] tracking-[-0.5px];
     font-family: Source Code Pro;
   }
-  .home-wellcome__description {
+  &__description {
     @apply max-w-[375px] font-normal text-base leading-[20.11px] tracking-[0%];
     font-family: Source Code Pro;
   }
-  .home-wellcome__get-start {
+  &__get-start {
     @apply font-medium text-[22px] leading-[26.4px] tracking-[0%];
   }
-  .home-wellcome__name {
+  &__name {
     @apply font-[250] text-xl leading-6;
     font-family: Aeonik;
   }
@@ -84,17 +84,17 @@
 
 @media (max-width: 1024px) {
   .home-wellcome {
-    .home-wellcome__title {
+    &__title {
       @apply max-w-[60%] font-normal text-[34px] leading-[40.8px] tracking-[0.25px];
       font-family: Aeonik;
     }
-    .home-wellcome__description {
+    &__description {
       @apply text-xs leading-[15.08px];
     }
-    .home-wellcome__get-start {
+    &__get-start {
       @apply text-[17px] leading-[20.4px];
     }
-    .home-wellcome__name {
+    &__name {
       @apply text-[10.6px] leading-[12.72px];
     }
   }

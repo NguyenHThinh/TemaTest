@@ -22,3 +22,11 @@ body {
 a:hover {
   @apply text-[#abbb31] transition-colors ease-linear cursor-pointer
 }
+
+.features-slider__pagination-button {
+  @apply h-3 w-12 bg-[#CFCFCF] transition-all block;
+}
+
+.features-slider__pagination-button--active {
+  @apply w-20 bg-[#DDF247] block;
+}

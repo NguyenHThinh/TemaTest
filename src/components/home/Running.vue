@@ -2,7 +2,7 @@
   <div class="section_container home-running">
     <div>
       <h2 class="home-running__title">{{ $t("getUpAndRunning") }}</h2>
-      <div class="flex flex-col sm:flex-row mt-20 mb-20 lg:mb-0">
+      <div class="flex flex-col sm:flex-row lg:mt-20 my-16 lg:mb-0">
         <div
           class="flex flex-col items-center text-center lg:text-left lg:items-start"
         >
@@ -49,36 +49,35 @@ import { NuxtImg } from "#components";
 
 <style lang="scss" scoped>
 .home-running {
-  @apply flex flex-col lg:flex-row items-center justify-between p-5 lg:p-[50px];
+  @apply flex flex-col lg:flex-row items-center justify-between p-5 pb-20 lg:p-[50px];
 
-  .home-running__title {
+  &__title {
     @apply max-w-[430px] mx-auto lg:mx-0 font-bold text-5xl leading-[57.6px] tracking-[0%];
   }
 
-  .home-running__box-title {
+  &__box-title {
     @apply font-bold text-[34px] leading-[40.8px] tracking-[0.25px];
   }
 
-  .home-running__box-desc {
+  &__box-desc {
     @apply max-w-[224px] font-normal text-base leading-[22px] tracking-[0.1px];
   }
 
-  .home-running__pic {
+  &__pic {
     @apply w-[343px] lg:w-[520px];
 
     &:before {
-      content: "";
-      @apply w-[343px] h-[323px] lg:w-[520px] lg:h-[490px] bg-black rounded-xl absolute;
+      @apply w-[343px] h-[323px] lg:w-[520px] lg:h-[490px] bg-black rounded-xl absolute content-[""];
     }
 
-    .home-running__pic-contain {
+    &-contain {
       @apply w-[313px] h-[377px] lg:w-[475px] lg:h-[575px] p-5 bg-[#DDF247] rounded-xl mx-auto mt-5 relative overflow-hidden;
       
-      .home-running__pic-contain--title {
+      &--title {
         @apply text-black font-bold text-[34px] leading-[40.8px] tracking-[0.25px] opacity-30;
       }
   
-      .home-running__pic-contain--name {
+      &--name {
         @apply max-w-[218px] text-black font-bold text-5xl leading-[57.6px] tracking-[0%] mt-5 opacity-20;
       }
     }
