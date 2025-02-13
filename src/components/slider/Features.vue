@@ -91,6 +91,6 @@ useSwiper(featuresSlider, {
 }
 
 .features-pagination {
-  @apply flex flex-row justify-center items-center gap-2 mt-10 lg:absolute lg:-left-[53%] lg:top-[250px];
+  @apply flex flex-row justify-center items-center gap-2 mt-10 lg:absolute lg:-left-[54%] lg:bottom-4;
 }
 </style>
