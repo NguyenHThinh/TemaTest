@@ -23,17 +23,17 @@
     <div class="w-full h-px bg-[#A3A3A3]"></div>
     <div class="lg:px-20 py-[30px] flex flex-col md:flex-row justify-between items-center">
       <div class="w-full md:w-max flex flex-row items-center justify-around gap-5">
-        <NuxtImg src="/images/Icon/ic-fb.png" class="w-3 h-6 object-cover cursor-pointer" />
-        <NuxtImg src="/images/Icon/ic-insta.png" class="w-6 h-6 object-cover cursor-pointer" />
+        <NuxtImg src="/images/Icon/ic-fb.png" class="w-3 h-6 object-cover cursor-pointer lg:hover:scale-150 transition-transform" />
+        <NuxtImg src="/images/Icon/ic-insta.png" class="w-6 h-6 object-cover cursor-pointer lg:hover:scale-150 transition-transform" />
         <NuxtImg
           src="/images/Icon/ic-linkedin.png"
-          class="w-6 h-6 object-cover cursor-pointer"
+          class="w-6 h-6 object-cover cursor-pointer lg:hover:scale-150 transition-transform"
         />
         <NuxtImg
           src="/images/Icon/ic-twitter.png"
-          class="w-6 h-6 object-cover cursor-pointer"
+          class="w-6 h-6 object-cover cursor-pointer lg:hover:scale-150 transition-transform"
         />
-        <NuxtImg src="/images/Icon/ic-mail.png" class="w-6 h-6 object-cover cursor-pointer" />
+        <NuxtImg src="/images/Icon/ic-mail.png" class="w-6 h-6 object-cover cursor-pointer lg:hover:scale-150 transition-transform" />
       </div>
       <div class="w-full h-px bg-[#A3A3A3] md:hidden my-8"></div>
       <p
