@@ -20,6 +20,8 @@
 const {t} = useI18n()
 
 useSeoMeta({
-  title: `${t("home")} | Macode`
+  title: `${t("home")} | Macode`,
+  description: t('improveYourSkill'),
 });
+
 </script>
