@@ -18,7 +18,3 @@ body {
 .section_container {
   @apply w-full max-w-[1440px] mx-auto;
 }
-
-a:hover {
-  @apply text-[#abbb31] transition-colors ease-linear cursor-pointer
-}
