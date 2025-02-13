@@ -88,10 +88,10 @@
     &.active {
       @apply h-[548px] bg-black text-white;
       
-      &-price {
+      .home-package__box-price {
         @apply my-10;
       }
-      &-btn {
+      .home-package__box-btn {
         @apply text-black bg-[#ddf247] lg:hover:shadow-md lg:hover:bg-opacity-90 transition-all;
       }
     }
