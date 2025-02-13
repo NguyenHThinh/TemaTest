@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'rounded-xl p-8 min-w-[317px]',
+      'rounded-xl p-8 min-w-[317px] select-none cursor-pointer',
       currentSlide === index ? 'bg-[#DDF247]' : 'bg-white',
       { 'order-1': currentSlide === index },
       { 'order-0': nextSlide === index },
@@ -9,6 +9,8 @@
     ]"
     v-for="(slide, index) in sliderData"
     :key="slide.id"
+    @mousedown="handleChangeSlide(index)"
+    @touchend="handleChangeSlide(index)"
   >
     <div class="p-5 w-max rounded-lg bg-white">
       <NuxtImg :src="slide.icon" class="object-contain w-10 h-10" />
@@ -33,6 +35,8 @@ const props = defineProps({
   },
 });
 
+const emit = defineEmits(["update:currentSlide"]);
+
 const nextSlide = computed(() => {
   const nextSlide =
     props.currentSlide < props.sliderData.length - 1
@@ -47,4 +51,8 @@ const prevSlide = computed(() => {
       : props.currentSlide - 1;
   return prevSlide;
 });
+
+const handleChangeSlide = (index: number) => {
+  emit("update:currentSlide", index);
+}
 </script>
