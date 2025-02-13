@@ -13,7 +13,8 @@
       </h3>
 
       <button
-        class="mt-20 cursor-pointer w-max py-4 px-7 gap-5 flex flex-row items-center rounded-[2px] bg-[#010101] text-white lg:hover:shadow-md lg:hover:bg-opacity-80 transition-all"
+        class="mt-20 cursor-pointer w-max py-4 px-7 gap-5 flex flex-row items-center rounded-[2px] 
+        bg-[#010101] text-white lg:hover:bg-opacity-80 lg:hover:text-[#DDF247] transition-all"
       >
         <p class="home-wellcome__get-start">Get started</p>
         <NuxtImg

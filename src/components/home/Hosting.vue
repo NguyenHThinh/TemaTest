@@ -43,7 +43,7 @@
   }
 
   .home-hosting__try-btn {
-    @apply cursor-pointer w-max py-4 px-7 gap-5 flex flex-row items-center rounded-[2px] bg-[#010101] text-white lg:hover:shadow-md lg:hover:bg-opacity-80 transition-all;
+    @apply cursor-pointer w-max py-4 px-7 gap-5 flex flex-row items-center rounded-[2px] bg-[#010101] text-white lg:hover:text-[#DDF247] lg:hover:bg-opacity-80 transition-all;
 
     .home-hosting__try-btn--text {
       @apply font-medium text-[22px] leading-[26.4px] tracking-[0%];
