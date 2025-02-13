@@ -1,3 +1,26 @@
+<script lang="ts" setup>
+const props = defineProps({
+  question: {
+    type: String,
+    required: true,
+  },
+  answer: {
+    type: String,
+    required: true,
+  },
+  isActive: {
+    type: Boolean,
+    default: false,
+  },
+});
+
+const isActiveAnswer = ref(props.isActive);
+
+const handChangeActiveAnswer = () => {
+  isActiveAnswer.value = !isActiveAnswer.value;
+};
+</script>
+
 <template>
   <div class="faq-box">
     <div class="faq-box__content">
@@ -30,29 +53,6 @@
     </button>
   </div>
 </template>
-
-<script lang="ts" setup>
-const props = defineProps({
-  question: {
-    type: String,
-    required: true,
-  },
-  answer: {
-    type: String,
-    required: true,
-  },
-  isActive: {
-    type: Boolean,
-    default: false,
-  },
-});
-
-const isActiveAnswer = ref(props.isActive);
-
-const handChangeActiveAnswer = () => {
-  isActiveAnswer.value = !isActiveAnswer.value;
-};
-</script>
 
 <style lang="scss" scoped>
 .faq-box {

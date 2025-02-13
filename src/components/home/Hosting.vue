@@ -1,3 +1,5 @@
+<script lang="ts" setup></script>
+
 <template>
   <div class="section_container home-hosting">
     <div class="relative">
@@ -25,8 +27,6 @@
     </div>
   </div>
 </template>
-
-<script lang="ts" setup></script>
 
 <style lang="scss" scoped>
 .home-hosting {

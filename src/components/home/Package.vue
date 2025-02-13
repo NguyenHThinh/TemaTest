@@ -1,3 +1,5 @@
+<script lang="ts" setup></script>
+
 <template>
   <div class="section_container py-20 lg:px-[50px] px-5">
     <h2 class="home-package__title">{{ $t("choosePackage") }}</h2>
@@ -51,8 +53,6 @@
     </div>
   </div>
 </template>
-
-<script lang="ts" setup></script>
 
 <style lang="scss" scoped>
 .home-package__title {

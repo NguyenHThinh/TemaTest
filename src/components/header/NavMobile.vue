@@ -1,7 +1,19 @@
+<script setup>
+const isOpenNav = ref(false);
+
+const handleOpenMenu = () => {
+  isOpenNav.value = true
+}
+
+const handleCloseMenu = () => {
+  isOpenNav.value = false
+}
+</script>
+
 <template>
   <div class="lg:hidden">
     <!-- Button open sidebar -->
-    <button @click="isOpenNav = true">
+    <button @click="handleOpenMenu">
       <NuxtImg src="/images/Icon/ic-menu.png" class="w-5 h-2" />
     </button>
 
@@ -9,14 +21,14 @@
     <div
       class="fixed inset-0 z-40"
       v-if="isOpenNav"
-      @click="isOpenNav = false"
+      @click="handleCloseMenu"
     ></div>
     <div
       class="z-50 fixed top-0 bottom-0 right-0 min-h-screen w-[327px] bg-[#000000DE] backdrop-blur-[10px] transition-all"
       :class="{ 'translate-x-0': isOpenNav, 'translate-x-full': !isOpenNav }"
     >
       <div class="p-4 flex justify-end items-center">
-        <button @click="isOpenNav = false">
+        <button @click="handleCloseMenu">
           <NuxtImg
             src="/images/Icon/ic-close.png"
             class="w-[30px] h-[30px] cursor-pointer"
@@ -70,12 +82,7 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue";
-const isOpenNav = ref(false);
-</script>
-
-<style scoped>
+<style lang="scss" scoped>
 .header__nav-mb--items {
   @apply font-normal text-base leading-[19.2px] tracking-[0%] flex-1 ml-3;
 }
