@@ -32,7 +32,7 @@
 
 <style lang="scss" scoped>
 .footer__sub {
-  @apply max-w-[1172px] h-[300px] lg:h-[410px] mx-auto rounded-[20px] bg-[#DDF247] p-[24px] lg:py-[52px] shadow-[0px_21px_127px_22px_#DDF2474D];
+  @apply max-w-[1172px] lg:h-[410px] mx-auto rounded-[20px] bg-[#DDF247] p-[30px] lg:py-[52px] shadow-[0px_21px_127px_22px_#DDF2474D];
 
   &--title {
     @apply font-extrabold text-[22px] leading-[28.91px] tracking-[-0.5px] text-center lg:text-[52px] lg:leading-[70.39px];

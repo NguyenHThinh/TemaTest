@@ -58,20 +58,20 @@ const handChangeActiveAnswer = () => {
 .faq-box {
   @apply flex flex-row justify-between items-center;
 
-  .faq-box__content {
+  &__content {
     @apply max-w-[782px] px-0 py-10 transition-all;
 
-    .faq-box__content--question {
+    &--question {
       @apply font-medium text-[21px] leading-[25.2px] tracking-[0.22px] 
       lg:font-bold lg:text-[34px] lg:leading-[40.8px] lg:tracking-[0.25px];
     }
 
-    .faq-box__content--answer {
+    &--answer {
       @apply font-[250] text-[19px] leading-[22.8px] tracking-[0%] 
-      lg:font-normal lg:text-base lg:leading-[22px] lg:tracking-[0.1px] lg:mt-14 mt-4;
+      lg:font-normal lg:text-base lg:leading-[22px] lg:tracking-[0.1px] lg:mt-[61px] mt-2;
     }
   }
-  .faq-box__controler-btn {
+  &__controler-btn {
     @apply flex justify-center items-center border-2 border-solid rounded-full font-medium 
     w-8 h-8 lg:w-[62px] lg:h-[62px] min-w-8 lg:hover:shadow-md lg:hover:bg-opacity-80 transition-all
     lg:text-[47.41px] lg:tracking-[0.3px] text-[24.47px] leading-[29.36px] tracking-[0.16px];

@@ -2,7 +2,7 @@
   <div class="section_container home-running">
     <div>
       <h2 class="home-running__title">{{ $t("getUpAndRunning") }}</h2>
-      <div class="flex flex-col sm:flex-row mt-20 mb-20 lg:mb-0">
+      <div class="flex flex-col sm:flex-row lg:mt-20 my-16 lg:mb-0">
         <div
           class="flex flex-col items-center text-center lg:text-left lg:items-start"
         >
@@ -49,7 +49,7 @@ import { NuxtImg } from "#components";
 
 <style lang="scss" scoped>
 .home-running {
-  @apply flex flex-col lg:flex-row items-center justify-between p-5 lg:p-[50px];
+  @apply flex flex-col lg:flex-row items-center justify-between p-5 pb-20 lg:p-[50px];
 
   &__title {
     @apply max-w-[430px] mx-auto lg:mx-0 font-bold text-5xl leading-[57.6px] tracking-[0%];

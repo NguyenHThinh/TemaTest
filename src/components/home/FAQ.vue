@@ -29,7 +29,7 @@ const FAQ_DATA: IFaQData[] = [
 <template>
   <div class="section_container p-5 lg:py-20 lg:px-[50px]">
     <h2 class="home-faq__title">{{ t("QA") }}</h2>
-    <div class="divide-y-2 divide-[#E4E4E4] mt-8">
+    <div class="divide-y-2 divide-[#E4E4E4] mt-[50px] lg:mt-60">
       <CommonFaqQuestions
         v-for="(item, index) in FAQ_DATA"
         :key="item.id"
