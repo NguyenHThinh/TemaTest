@@ -10,13 +10,13 @@
       </div>
       <ul class="flex flex-col items-center lg:flex-row gap-16">
         <li class="footer__nav--items">
-          <NuxtLink href="#">Tutorials</NuxtLink>
+          <NuxtLinkLocale href="#">{{ $t("tutorial") }}</NuxtLinkLocale>
         </li>
         <li class="footer__nav--items">
-          <NuxtLink href="#">Case studies</NuxtLink>
+          <NuxtLinkLocale href="#">{{ $t("caseStudies") }}</NuxtLinkLocale>
         </li>
         <li class="footer__nav--items">
-          <NuxtLink href="#">Resources</NuxtLink>
+          <NuxtLinkLocale href="#">{{ $t("resources") }}</NuxtLinkLocale>
         </li>
       </ul>
     </div>
@@ -48,7 +48,10 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { NuxtLinkLocale } from '#components';
+
+</script>
 
 <style scoped>
 .footer__nav--items {

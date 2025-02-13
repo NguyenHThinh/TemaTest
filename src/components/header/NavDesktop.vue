@@ -1,15 +1,15 @@
 <template>
   <ul class="hidden lg:flex flex-row gap-6">
     <li class="header__nav--items">
-      <NuxtLink href="#">Tutorials</NuxtLink>
+      <NuxtLinkLocale href="#">{{ $t("tutorial") }}</NuxtLinkLocale>
     </li>
     <li>·</li>
     <li class="header__nav--items">
-      <NuxtLink href="#">Case studies</NuxtLink>
+      <NuxtLinkLocale href="#">{{ $t("caseStudies") }}</NuxtLinkLocale>
     </li>
     <li>·</li>
     <li class="header__nav--items">
-      <NuxtLink href="#">Resources</NuxtLink>
+      <NuxtLinkLocale href="#">{{ $t("resources") }}</NuxtLinkLocale>
     </li>
   </ul>
 </template>
