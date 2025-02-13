@@ -25,7 +25,7 @@
       <SliderFeatures
         :slider-data="SLIDES_DATA"
         :current-slide="currentSlide"
-        @update:current-slide="handleChangeSlide"
+        @update:current-slide=""
       />
     </div>
     <div class="col-span-8 flex flex-row gap-2 mt-20 lg:hidden mx-auto">
@@ -68,35 +68,23 @@ const SLIDES_DATA: IFeaturesSlide[] = [
 ];
 
 const currentSlide = ref(0);
-const slideInterval = ref<NodeJS.Timeout | null>(null);
+let slideInterval: ReturnType<typeof setInterval> | null = null;
 
-  const handleChangeSlide = (index: number) => {
+const handleChangeSlide = (index: number) => {
   currentSlide.value = index;
-  resetInterval(); // Reset interval khi người dùng chuyển slide thủ công
 };
 
-const startInterval = () => {
-  slideInterval.value = setInterval(() => {
+onMounted(() => {
+  slideInterval = setInterval(() => {
     handleChangeSlide(
       currentSlide.value < SLIDES_DATA.length - 1 ? currentSlide.value + 1 : 0
     );
   }, 5000);
-};
-
-const resetInterval = () => {
-  if (slideInterval.value) {
-    clearInterval(slideInterval.value);
-  }
-  startInterval();
-};
-
-onMounted(() => {
-  startInterval();
 });
 
 onUnmounted(() => {
-  if (slideInterval.value) {
-    clearInterval(slideInterval.value);
+  if (slideInterval) {
+    clearInterval(slideInterval);
   }
 });
 </script>
