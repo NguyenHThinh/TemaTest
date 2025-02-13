@@ -7,7 +7,7 @@
           class="flex flex-col items-center text-center lg:text-left lg:items-start"
         >
           <NuxtImg src="/images/ic-sound.png" class="w-11 h-10" />
-          <div class="space-y-4 mt-14 flex flex-col items-center">
+          <div class="space-y-4 mt-14 flex flex-col items-center lg:items-start">
             <h3 class="home-running__box-title">{{ $t("university") }}</h3>
             <p class="home-running__box-desc">
               {{ $t("browseHundreds") }}
@@ -15,13 +15,13 @@
           </div>
         </div>
         <div
-          class="h-px w-[220px] mx-auto my-14 sm:my-0 sm:w-px sm:h-[220px] sm:mx-14 bg-[#E4E4E4]"
+          class="h-px w-[220px] mx-auto my-14 sm:my-0 sm:w-px sm:h-[220px] sm:mx-14 lg:mx-8 xl:mx-14 bg-[#E4E4E4]"
         ></div>
         <div
           class="flex flex-col items-center text-center lg:text-left lg:items-start"
         >
           <NuxtImg src="/images/ic-rubic.png" class="w-8 h-9" />
-          <div class="space-y-4 mt-14 flex flex-col items-center">
+          <div class="space-y-4 mt-14 flex flex-col items-center lg:items-start">
             <h3 class="home-running__box-title">{{ $t("showcase") }}</h3>
             <p class="home-running__box-desc">
               {{ $t("getInspired") }}
