@@ -25,7 +25,7 @@
       <SliderFeatures
         :slider-data="SLIDES_DATA"
         :current-slide="currentSlide"
-        @update:current-slide=""
+        @update:current-slide="handleChangeSlide"
       />
     </div>
     <div class="col-span-8 flex flex-row gap-2 mt-20 lg:hidden mx-auto">
